@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+#row1 {
+
+    height: 100%;
+    width: 100%;
+    background: #020202;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    height: 80px;
+    width: 100%;
+
+}
+
+h1 {
+    padding-top: 35px;
+    font-size: 30px;
+    font-family: 'arial';
+    color: rgb(255, 255, 255)
+}
+
+.logo span {
+    color: blue;
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+}
+
+
+.header ul li {
+    padding: 40px 50px;
+    position: relative;
+
+}
+
+.header ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s;
+
+}
+
+.header ul li a span {
+    color: black;
+}
+
+.header ul li a:hover {
+    color: red
+}
+
+.search {
+
+    height: 10px;
+    width: 180px;
+    display: flex;
+    padding: 10px 30px;
+    background: rgb(121, 237, 121);
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+
+}
+
+.search:hover input {
+    width: 400px;
+}
+
+.search input {
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+}
+
+.dropdown_menu {
+    display: none;
+
+}
+
+.header ul li:hover .dropdown_menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #000000;
+}
+
+.dropdown_menu ul {
+    display: block;
+    margin: 10px;
+
+}
+
+.dropdown_menu ul li {
+    width: 150px;
+    padding: 10px;
+}
+ /* row 1 css ends here */
